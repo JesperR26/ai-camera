@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Count Graph</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function fetchData() {
+            $.getJSON('/data', function(data) {
+                $('#graph-container').html(data.graph_html);
+            });
+        }
+
+        setInterval(fetchData, 5000);  // Fetch new data every 5 seconds
+    </script>
+</head>
+<body>
+    <h1>People Count Over Time</h1>
+    
+    <!-- Graph Section -->
+    <div id="graph-container">{{ graph_html|safe }}</div>
+</body>
+</html>

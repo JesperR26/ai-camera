@@ -1,0 +1,14 @@
+seconden teller voor hoelang ergens staat
+    average nemen van tijdsbesteding en dit op html site zetten
+    dit in een graph zetten 
+        live graph
+        totaal graph van persoon plus hoelang
+        en average graph van average tijd 
+
+website beter maken
+    login page
+    selectie vakken
+        pagina headers voor live view graphs etc
+    design geven
+
+meerdere camera optie?
